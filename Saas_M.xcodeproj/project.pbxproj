@@ -12,9 +12,12 @@
 		63AAABED206C893B00044934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AAABEB206C893B00044934 /* Main.storyboard */; };
 		63AAABEF206C893B00044934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AAABEE206C893B00044934 /* Assets.xcassets */; };
 		63AAABF2206C893B00044934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AAABF0206C893B00044934 /* LaunchScreen.storyboard */; };
+		FF4E7F4EBCD91D9B8512E848 /* Pods_Saas_M.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316C3AF7E0C6F9C56C93D6B /* Pods_Saas_M.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DCE75F8C7EDD9BD08B9970E /* Pods-Saas_M.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saas_M.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saas_M/Pods-Saas_M.release.xcconfig"; sourceTree = "<group>"; };
+		2316C3AF7E0C6F9C56C93D6B /* Pods_Saas_M.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saas_M.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AAABE4206C893B00044934 /* Saas_M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saas_M.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AAABE7206C893B00044934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63AAABE9206C893B00044934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		63AAABEE206C893B00044934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AAABF1206C893B00044934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63AAABF3206C893B00044934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882953B8CD138D9E76B4517B /* Pods-Saas_M.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saas_M.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saas_M/Pods-Saas_M.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4E7F4EBCD91D9B8512E848 /* Pods_Saas_M.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				63AAABE6206C893B00044934 /* Saas_M */,
 				63AAABE5206C893B00044934 /* Products */,
+				BFD485B598848E591523A4B3 /* Pods */,
+				FA1856C7569A4AD29884E84F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Saas_M;
 			sourceTree = "<group>";
 		};
+		BFD485B598848E591523A4B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				882953B8CD138D9E76B4517B /* Pods-Saas_M.debug.xcconfig */,
+				0DCE75F8C7EDD9BD08B9970E /* Pods-Saas_M.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA1856C7569A4AD29884E84F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2316C3AF7E0C6F9C56C93D6B /* Pods_Saas_M.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63AAABF6206C893B00044934 /* Build configuration list for PBXNativeTarget "Saas_M" */;
 			buildPhases = (
+				73358EBDBB7FA8C2689BF8C2 /* [CP] Check Pods Manifest.lock */,
 				63AAABE0206C893A00044934 /* Sources */,
 				63AAABE1206C893A00044934 /* Frameworks */,
 				63AAABE2206C893A00044934 /* Resources */,
+				30823BC2680AB1327C10BA5D /* [CP] Embed Pods Frameworks */,
+				859332757FD8FE98A054A749 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +123,7 @@
 				TargetAttributes = {
 					63AAABE3206C893A00044934 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30823BC2680AB1327C10BA5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Saas_M/Pods-Saas_M-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saas_M/Pods-Saas_M-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73358EBDBB7FA8C2689BF8C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Saas_M-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		859332757FD8FE98A054A749 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saas_M/Pods-Saas_M-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63AAABE0206C893A00044934 /* Sources */ = {
@@ -272,14 +353,18 @@
 		};
 		63AAABF7206C893B00044934 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882953B8CD138D9E76B4517B /* Pods-Saas_M.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CZ8FDE6Y49;
 				INFOPLIST_FILE = Saas_M/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rqb.Saas-M";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hkd.SaasM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ed5f374-021c-471f-8bb4-4f0db8d9d64b";
+				PROVISIONING_PROFILE_SPECIFIER = SaasM;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +372,18 @@
 		};
 		63AAABF8206C893B00044934 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCE75F8C7EDD9BD08B9970E /* Pods-Saas_M.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CZ8FDE6Y49;
 				INFOPLIST_FILE = Saas_M/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rqb.Saas-M";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hkd.SaasM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ed5f374-021c-471f-8bb4-4f0db8d9d64b";
+				PROVISIONING_PROFILE_SPECIFIER = SaasM;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
